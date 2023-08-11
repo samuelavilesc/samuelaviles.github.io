@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background: black;
+}
+.container{
+  padding-top: 300px;
+  text-align: center;
+  margin: auto;
+  display: table;
+}
+h1{
+  float: left;
+  font-size: 60px;
+  color: #FFE0CC;
+  position: relative;
+}
+h1 span{
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: black;
+  border-left: 1px solid #fff;
+  animation: maquina 3s infinite alternate;
+}
+@keyframes maquina {
+    from{
+      width: 100%;
+    }
+    to{
+      width: 0;
+    }
+}
