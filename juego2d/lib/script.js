@@ -22,11 +22,11 @@ var game= new Phaser.Game(config);
 var gameOver=false;
 
 function preload(){
-    this.load.image('sky','../assets/sky.png'); //cargar imagen, nombre de la imagen, ruta
-    this.load.image('platform','../assets/platform.png');
-    this.load.image('bomb','../assets/bomb.png');
-    this.load.image('star','../assets/star.png');
-    this.load.spritesheet('player','../assets/dude.png',{frameWidth: 32, frameHeight: 48}); //nombre pj, ruta, tamaño de cada cara del pj
+    this.load.image('sky','./assets/sky.png'); //cargar imagen, nombre de la imagen, ruta
+    this.load.image('platform','./assets/platform.png');
+    this.load.image('bomb','./assets/bomb.png');
+    this.load.image('star','./assets/star.png');
+    this.load.spritesheet('player','./assets/dude.png',{frameWidth: 32, frameHeight: 48}); //nombre pj, ruta, tamaño de cada cara del pj
 
 }
 
