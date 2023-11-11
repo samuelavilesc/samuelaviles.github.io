@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculadora MCD MCM</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <section>
+        <div><h1>Calculadora MCD y MCM</h1></div>
+        <form>
+            <div>
+                <label for="num1">Número 1</label>
+                <input type="number" name="num1" id="num1" required>
+            </div>
+            <div>
+                <label for="num2">Número 2</label>
+                <input type="number" name="num2" id="num2" required>
+            </div>
+            <div class="caja">
+                <select name="selector" id="selector" required>
+                    <option value="" disabled selected>Elige una opción</option>
+                    <option value="mcm">MCM</option>
+                    <option value="mcd">MCD</option>
+                </select>
+            </div>
+            <div>
+                <button type="button" onclick="calcular()">Calcular</button>
+            </div>
+            <div>
+                <label for="resultado">Resultado:</label>
+                <span type="number" name="resultado" id="resultado" readonly>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

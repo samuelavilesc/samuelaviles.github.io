@@ -1,0 +1,92 @@
+html{
+    font-family: sans-serif;
+    color:#fff;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 35%;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    width: auto;
+    background-color: #222;
+    
+}
+section div h1{
+    font-size: 2rem;
+
+}
+form{
+    margin: 0 auto;
+    display: table;
+}
+form label{
+    font-size: 20px;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+
+}
+form input{
+    width: 10vw;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    background-color: #fff;
+    color: #222;
+    text-align: center;
+
+}
+div button{
+    background-color: #8a17f5;
+    border: none;
+    color: black;
+    padding: 12px 52px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+.caja {
+    margin:25px auto 25px auto;	
+    height:30px;
+    overflow: hidden;
+    width: 25vw;
+    position:relative;
+}
+select {
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+}
+select:focus{ outline: none;}
+@media (max-width: 800px) {
+    section{
+        margin: 10% 10%;
+        height: 50vh;
+    }
+    form h1{
+        font-size: 0.5rem;
+    
+    }
+    form input{
+        width: 20vw;
+    }
+    select{
+        width: 20vw;
+    }
+    .caja{
+        width: 50vw;
+    }
+    
+}
