@@ -18,9 +18,14 @@ section div h1{
     font-size: 2rem;
 
 }
-form{
+section form{
     margin: 0 auto;
-    display: table;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: auto;
 }
 form label{
     font-size: 20px;
@@ -42,7 +47,7 @@ form input{
     text-align: center;
 
 }
-div button{
+section form div button{
     background-color: #8a17f5;
     border: none;
     color: black;
@@ -70,21 +75,36 @@ select {
     width: 250px;
 }
 select:focus{ outline: none;}
-@media (max-width: 800px) {
+@media(max-width: 800px) {
     section{
-        margin: 10% 10%;
+        display:inherit;
+        margin: 10% 20%;
         height: 50vh;
-        width: 60vh;
+        width: 60vw;
+    }
+    section form{
+        height: 30vh;
+        width: 50vw;
     }
     form h1{
         font-size: 0.5rem;
     
     }
+    form label{
+        font-size: 1.1rem;
+    }
     form input{
         width: 20vw;
     }
     select{
-        width: 20vw;
+        width: 35vw;
+        height: auto;
+        
+    }
+    section form div button{
+        width: 30vw;
+        text-align: center;
+        padding: 2px 2px;
     }
     .caja{
         width: 50vw;
